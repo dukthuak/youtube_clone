@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="icons/iconavty.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=qh3vBZs6FiU">
+          <div class="thumbnail-row">
+            
+              <img class="thumbnail" src="thumbnails/Kim Trong Nghia.jpg">
+            
+            <div class="video-time">1:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/nobita.webp">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                [S9] Tuyển Tập Hoạt Hình Doraemon Phần 12 - Trọn Bộ Hoạt Hình Doraemon Lồng Tiếng Viêt...
+              </p>
+              <p class="video-author">
+                Kim Trong Nghia <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 2 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/OzCg4_lqb-0?si=rUDLjSWCjBr6J-P4">
+          <div class="thumbnail-row">
+            
+              <img class="thumbnail" src="thumbnails/Real.jpg">
+            
+            <div class="video-time">11:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/c1.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Highlights: Man City - Real Madrid | Đại chiến căng như dây đàn, loạt penalty phân định kẻ mạnh...              </p>
+              <p class="video-author">
+                Highlight UCL <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                800K views &#183; 1 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=l-nMKJ5J3Uc">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Mrbeast.jpg">
+            <div class="video-time">2:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/mr beast.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Ages 1 - 100 Decide Who Wins $250,000
+              </p>
+              <p class="video-author">
+                MrBeast <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                119K views &#183; 19 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=BWn3NTykpvY">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/vietnam.jpg">
+            <div class="video-time">1:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/logoviet.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Highlights: U23 Malaysia - U23 Việt Nam | Siêu phẩm bùng nổ cầu trườn...
+              </p>
+              <p class="video-author">
+                Bong Da Viet <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                300K views &#183; 31 minutes ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=m_gSS7paaZs">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/marid.jpg">
+            <div class="video-time">6:28</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/channels4_profile.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                REAL MADRID - ĐIỀU GÌ ĐÃ TẠO NÊN CÂU LẠC BỘ VĨ ĐẠI NHẤT THẾ GIỚI
+              </p>
+              <p class="video-author">
+                Hoc Vien Bo Va Gau <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                450K views &#183; 2 year ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=eZwtbhgRHrc">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/dochoi.jpg">
+            <div class="video-time">2:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/dra.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Đồ Chơi Cổng Trường | DraTelling
+              </p>
+              <p class="video-author">
+                Dratelling
+              </p>
+              <p class="video-stats">
+                150K views &#183; 8 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=zJ3Pj3awex4">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/arsenal.jpg">
+            <div class="video-time">4:43</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/ars.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                HIGHLIGHTS | Bayern Munich vs Arsenal (1-0, 3-2 on aggregate) |...
+              </p>
+              <p class="video-author">
+                Arsenal <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                22M views &#183; 1 day ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=PYOyMK2Jw7g">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/mungu.jpg">
+            <div class="video-time">7:55</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/facub.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                INCREDIBLE Old Trafford Thriller! 🔥 | Manchester United 4-3 Liverpool |...
+              </p>
+              <p class="video-author">
+                The Emirates FA Cup <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                606K views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=AbP2_pXLkFE">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/mci.jpg">
+            <div class="video-time">22:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Manchester_City_FC_logo.svg.png">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                HIGHLIGHTS! Man City 4-0 Real Madrid | CITY SECURE...
+              </p>
+              <p class="video-author">
+                Man City <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                980k views &#183; 1 day ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=eq26kjepvaE">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/tthn.jpg">
+            <div class="video-time">8:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/tthnavt.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Tình Ta Hai Ngã Remix - AKI KHOA | Tại Sao Anh Còn Thương Em Mãi...
+              </p>
+              <p class="video-author">
+                Meo Remix
+              </p>
+              <p class="video-stats">
+                405K views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=iRom1yGkMBg">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/vnmalay.jpg">
+            <div class="video-time">13:52</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/vnmalayvat.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                🔴TRỰC TIẾP: U23 MALAYSIA - U23 VIỆT NAM | AFC U23 ASIAN CUP
+              </p>
+              <p class="video-author">
+                FPT Bong Da Viet <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                378K views &#183; 4 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://www.youtube.com/watch?v=ScYeClr7VdQ">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/panda.jpg">
+            <div class="video-time">10:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/panda 2.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Hành Trình Trở Thành Đệ Nhất Cao Thủ Của Gấu Trúc Po 4 | REVIEW...
+              </p>
+              <p class="video-author">
+                Chu Cuoi Review <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                151K views &#183; 15 hours ago
+              </p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="copyright">
+        code by Nghia
+      </div>
+    </footer>
+  </body>
+</html>

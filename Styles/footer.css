@@ -1,0 +1,15 @@
+.footer{
+    background-color: rgb(248, 248, 248);
+    color: black;
+    font-family: Roboto,Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 70px;
+    
+}
