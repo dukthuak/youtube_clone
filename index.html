@@ -1,89 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>YouTube.com Clone</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<head>
+  <title>YouTube.com Clone</title>
 
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="Styles/footer.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="icons/youtube-logo.svg">
-      </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="icons/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <!-- Put position absolute inside position relative -->
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
-      </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="icons/upload.svg">
-          <div class="tooltip">Create</div>
-        </div>
-        <div class="youtube-apps-icon-container">
-          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
-          <div class="tooltip">YouTube Apps</div>
-        </div>
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="icons/notifications.svg">
-          <div class="notifications-count">3</div>
-          <div class="tooltip">Notifications</div>
-        </div>
-        <img class="current-user-picture" src="icons/iconavty.jpg">
-      </div>
-    </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="icons/home.svg">
-        <div>Home</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/explore.svg">
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/subscriptions.svg">
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/originals.svg">
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/youtube-music.svg">
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="icons/library.svg">
-        <div>Library</div>
-      </div>
-    </nav>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="Styles/footer.css">
+</head>
 
-    <main>
-      <section class="video-grid">
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=qh3vBZs6FiU">
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <!-- Put position absolute inside position relative -->
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">YouTube Apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-user-picture" src="icons/iconavty.jpg">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <a href="index.html" class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </a>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+    <hr class="border">
+    <h3 style="padding: 6px 12px 4px;">Khám phá</h3>
+    <a href="trending.html" class="sidebar-link">
+      <img src="icons/icTrending.svg">
+      <div>Trending</div>
+    </a>
+    <div class="sidebar-link">
+      <img src="icons/music.svg">
+      <div>Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/game.svg">
+      <div>Game</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/news.svg">
+      <div>News</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/Sport.svg">
+      <div>Sport</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=qh3vBZs6FiU">
           <div class="thumbnail-row">
-            
-              <img class="thumbnail" src="thumbnails/Kim Trong Nghia.jpg">
-            
+
+            <img class="thumbnail" src="thumbnails/Kim Trong Nghia.jpg">
+
             <div class="video-time">1:19</div>
           </div>
           <div class="video-info-grid">
@@ -103,14 +127,14 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://youtu.be/OzCg4_lqb-0?si=rUDLjSWCjBr6J-P4">
+      <div class="video-preview">
+        <a href="https://youtu.be/OzCg4_lqb-0?si=rUDLjSWCjBr6J-P4">
           <div class="thumbnail-row">
-            
-              <img class="thumbnail" src="thumbnails/Real.jpg">
-            
+
+            <img class="thumbnail" src="thumbnails/Real.jpg">
+
             <div class="video-time">11:08</div>
           </div>
           <div class="video-info-grid">
@@ -119,7 +143,7 @@
             </div>
             <div class="video-info">
               <p class="video-title">
-                Highlights: Man City - Real Madrid | Đại chiến căng như dây đàn, loạt penalty phân định kẻ mạnh...              </p>
+                Highlights: Man City - Real Madrid | Đại chiến căng như dây đàn, loạt penalty phân định kẻ mạnh... </p>
               <p class="video-author">
                 Highlight UCL <span class="tick-mark">&#10003; </span>
               </p>
@@ -129,10 +153,10 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=l-nMKJ5J3Uc">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=l-nMKJ5J3Uc">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/Mrbeast.jpg">
             <div class="video-time">2:56</div>
@@ -154,9 +178,9 @@
             </div>
           </div>
         </a>
-        </div>
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=BWn3NTykpvY">
+      </div>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=BWn3NTykpvY">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/vietnam.jpg">
             <div class="video-time">1:40</div>
@@ -178,9 +202,9 @@
             </div>
           </div>
         </a>
-        </div>
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=m_gSS7paaZs">
+      </div>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=m_gSS7paaZs">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/marid.jpg">
             <div class="video-time">6:28</div>
@@ -202,9 +226,9 @@
             </div>
           </div>
         </a>
-        </div>
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=eZwtbhgRHrc">
+      </div>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=eZwtbhgRHrc">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/dochoi.jpg">
             <div class="video-time">2:08</div>
@@ -226,9 +250,9 @@
             </div>
           </div>
         </a>
-        </div>
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=zJ3Pj3awex4">
+      </div>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=zJ3Pj3awex4">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/arsenal.jpg">
             <div class="video-time">4:43</div>
@@ -250,9 +274,9 @@
             </div>
           </div>
         </a>
-        </div>
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=PYOyMK2Jw7g">
+      </div>
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=PYOyMK2Jw7g">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/mungu.jpg">
             <div class="video-time">7:55</div>
@@ -274,10 +298,10 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=AbP2_pXLkFE">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=AbP2_pXLkFE">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/mci.jpg">
             <div class="video-time">22:02</div>
@@ -299,10 +323,10 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=eq26kjepvaE">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=eq26kjepvaE">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/tthn.jpg">
             <div class="video-time">8:35</div>
@@ -324,10 +348,10 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=iRom1yGkMBg">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=iRom1yGkMBg">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/vnmalay.jpg">
             <div class="video-time">13:52</div>
@@ -349,10 +373,10 @@
             </div>
           </div>
         </a>
-        </div>
+      </div>
 
-        <div class="video-preview">
-          <a href="https://www.youtube.com/watch?v=ScYeClr7VdQ">
+      <div class="video-preview">
+        <a href="https://www.youtube.com/watch?v=ScYeClr7VdQ">
           <div class="thumbnail-row">
             <img class="thumbnail" src="thumbnails/panda.jpg">
             <div class="video-time">10:13</div>
@@ -373,16 +397,17 @@
               </p>
             </div>
           </div>
-          </a>
-        </div>
-
-        
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="copyright">
-        code by Nghia
+        </a>
       </div>
-    </footer>
-  </body>
+
+
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="copyright">
+      code by Nghia
+    </div>
+  </footer>
+</body>
+
 </html>
